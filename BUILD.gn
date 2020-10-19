@@ -1,0 +1,13 @@
+executable("hello") {
+     sources = [
+        "hello.c",
+    ]
+}
+
+group("root") {
+  deps = [
+    ...
+    "//url",
+    "//hello",
+  ]
+}
